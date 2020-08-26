@@ -1,0 +1,22 @@
+{
+  "name": "BradsPets",
+  "version": "1.0.0",
+  "description": "BradsPets - reuniting lost pets with their owners",
+  "main": "index.js",
+  "repository": {
+	"url": "https://github.com/JaredAdamsCode/BradsPets",
+	"type": "git"
+  },
+  "author": "Jared Adams",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd pet-client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a pet-client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+  },
+  "engines": {
+    "yarn": "1.22.4",
+    "npm": "6.14.7",
+    "node": "14.7.0"
+  }
+}
