@@ -25,27 +25,27 @@ pets = Pet.create([
     description: 'australian cattle dog with reddish hair',
     image_url: '',
     location: 'Fort Collins, CO',
-    user: users.first
+    user_id: users.first
   },
   {
     type_of_animal: 'dog',
     description: 'black and brown gernam shepard',
     image_url: '',
     location: 'Loveland, CO',
-    user: users.first
+    user_id: users.first
   },
   {
     type_of_animal: 'cat',
     description: 'back cat with green eyes',
     image_url: '',
     location: 'Arvada, CO',
-    user: users.first
+    user_id: users.first
   },
   {
     type_of_animal: 'cat',
     description: 'gray cat with black stripes',
     image_url: '',
     location: 'Colorado Springs, CO',
-    user: users.second
+    user_id: users.second
   }
 ])
