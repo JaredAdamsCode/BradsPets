@@ -9,7 +9,7 @@ local:
 google:
      service: GCS
      project: BradsPets
-     credentials: <%= Rails.root.join("./secrets/bradspets.json") %>
+     credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'] %>
      bucket: bradspets
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
