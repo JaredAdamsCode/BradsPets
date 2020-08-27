@@ -14,14 +14,14 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: pet-reuniter
-  password: <%= ENV['PETREUNITER_DATABASE_PASSWORD'] %>
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   # For details on connection pooling, see Rails configuration guide
+#   # http://guides.rubyonrails.org/configuring.html#database-pooling
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: pet-reuniter
+#   password: <%= ENV['PETREUNITER_DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
