@@ -34,6 +34,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login!
+      PetMailer.welcome_email(@user).deliver_now
       render json: {
         success: true,
         user: {
