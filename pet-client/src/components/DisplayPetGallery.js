@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import { Typography, Grid, Card, CardHeader, CardContent, CardMedia, Container, CardActionArea } from '@material-ui/core';
 import './displaypets.css'
 import UDPet from './UDPet';
+import ContactIcon from './ContactIcon';
 
 class DisplayPetGallery extends Component {
   constructor(props){
@@ -15,6 +16,11 @@ class DisplayPetGallery extends Component {
   render(){
     return(
       <Container>
+        <Typography variant="body1">
+          Brad is a man on a mission to reunite lost pets with their families. If you have found a lost
+          pet, click the link above to add it here. If you see your missing pet, click the email icon 
+          and Brad will connect you with whoever listed your pet. 
+        </Typography>
         <Grid container spacing={2}>
         <Grid item xs={12} >
 
@@ -40,7 +46,7 @@ class DisplayPetGallery extends Component {
 
                 </CardContent>
                 </CardActionArea>
-                {this.props.showOnlyMyPets ? <UDPet pet={pet.attributes} pet_id={pet.attributes.id}/> : null}
+                {this.props.showOnlyMyPets ? <UDPet pet={pet.attributes} pet_id={pet.attributes.id}/> : <ContactIcon pet={pet.attributes}/>}
               </Card>
 
             </Grid>

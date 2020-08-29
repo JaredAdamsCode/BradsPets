@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
 
   def create
-    @message = message.new(message_params)
+    @message = Message.new(message_params)
     if @message.save
       render json: {
         success: true
@@ -14,6 +14,6 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    params.require(:message).permit(:message, :user_id, :send_to_user_id)
+    params.require(:message).permit(:message_text, :user_id, :send_to_user_id)
   end
 end

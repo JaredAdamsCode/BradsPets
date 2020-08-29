@@ -10,6 +10,7 @@ import Signup from './components/Signup';
 import AddLostPet from './components/AddLostPet';
 import MyPets from './components/MyPets';
 import UpdateLostPet from './components/UpdateLostPet';
+import Message from './components/Message';
 
 class App extends Component{
   constructor(props) {
@@ -55,6 +56,11 @@ class App extends Component{
           />
           <Route exact path='/updatepet' render={
           props => (<UpdateLostPet {...props} loggedInStatus={this.state.isLoggedIn} 
+          handleLogOut={this.handleLogOut} user={this.state.user} />)
+          }
+          />
+          <Route exact path='/message' render={
+          props => (<Message {...props} loggedInStatus={this.state.isLoggedIn} 
           handleLogOut={this.handleLogOut} user={this.state.user} />)
           }
           />

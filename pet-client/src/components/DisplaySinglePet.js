@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import { Typography, Grid, Card, CardHeader, CardContent, CardMedia, Container, CardActionArea } from '@material-ui/core';
 import './displaypets.css'
 import UDPet from './UDPet';
+import ContactIcon from './ContactIcon';
 
 class DisplaySinglePet extends Component {
   constructor(props){
@@ -41,7 +42,7 @@ class DisplaySinglePet extends Component {
 
                 </CardContent>
                 </CardActionArea>
-                {this.props.showOnlyMyPets ? <UDPet pet={this.props.pet.attributes} pet_id={this.props.pet.attributes.id} /> : null}
+                {this.props.showOnlyMyPets ? <UDPet pet={this.props.pet.attributes} pet_id={this.props.pet.attributes.id} /> : <ContactIcon />}
               </Card>
 
             </Grid>

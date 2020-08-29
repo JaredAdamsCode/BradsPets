@@ -15,11 +15,17 @@ Rails.application.routes.draw do
   delete '/mypets', to: 'pets#destroy'
   patch '/updatepet', to: 'pets#update'
 
+  # routes for messages
+  post '/message', to: 'messages#create'
+
   # resources for users - only allow create, show one, or show all. No edit or delete.
   resources :users, only: [:create, :show, :index]
 
   # resources for pets - no limitations
   resources :pets
+
+  # resourcess for messages - no limitations
+  resources :messages
 
   get '*path', to: "application#fallback_index_html", constraints: ->(request) do
     !request.xhr? && request.format.html?
