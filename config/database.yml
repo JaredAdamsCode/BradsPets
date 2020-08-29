@@ -83,18 +83,18 @@ test:
 
 # this is production before deployment
  
-# production:
-#   <<: *default
-#   database: pet-reuniter_production
-#   username: pet-reuniter
-#   password: <%= ENV['PET-REUNITER_DATABASE_PASSWORD'] %>
-
 production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  timeout: 5000
-  username: "postgres"
-  password: "BradsPets123!"
-  database: "bradspets"
-  host:   "/cloudsql/bradspets:us-west3:bradspets"
+  <<: *default
+  database: pet-reuniter_production
+  username: pet-reuniter
+  password: <%= ENV['PET-REUNITER_DATABASE_PASSWORD'] %>
+
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: 5
+#   timeout: 5000
+#   username: "postgres"
+#   password: "BradsPets123!"
+#   database: "bradspets"
+#   host:   "/cloudsql/bradspets:us-west3:bradspets"
