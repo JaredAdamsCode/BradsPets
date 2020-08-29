@@ -23,28 +23,28 @@ pets = Pet.create([
   {
     type_of_animal: 'dog',
     description: 'australian cattle dog with reddish hair',
-    image_url: '',
+    image_url: "https://res.cloudinary.com/bradspets/image/upload/v1597417421/NoImage_iuk7vi.png",
     location: 'Fort Collins, CO',
     user_id: users.first
   },
   {
     type_of_animal: 'dog',
     description: 'black and brown gernam shepard',
-    image_url: '',
+    image_url: "https://res.cloudinary.com/bradspets/image/upload/v1597417421/NoImage_iuk7vi.png",
     location: 'Loveland, CO',
     user_id: users.first
   },
   {
     type_of_animal: 'cat',
     description: 'back cat with green eyes',
-    image_url: '',
+    image_url: "https://res.cloudinary.com/bradspets/image/upload/v1597417421/NoImage_iuk7vi.png",
     location: 'Arvada, CO',
     user_id: users.first
   },
   {
     type_of_animal: 'cat',
     description: 'gray cat with black stripes',
-    image_url: '',
+    image_url: "https://res.cloudinary.com/bradspets/image/upload/v1597417421/NoImage_iuk7vi.png",
     location: 'Colorado Springs, CO',
     user_id: users.second
   }

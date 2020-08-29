@@ -1,7 +1,7 @@
 class PetsController < ApplicationController
   
   def index
-    @pets = Pet.all
+    @pets = Pet.all.order("updated_at DESC")
     if @pets
       render json: PetSerializer.new(@pets).serialized_json
     else
