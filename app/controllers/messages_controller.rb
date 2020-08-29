@@ -14,6 +14,6 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-    message.require(:message).permit(:message, :user_id :send_to_user_id)
+    params.require(:message).permit(:message, :user_id, :send_to_user_id)
   end
 end
