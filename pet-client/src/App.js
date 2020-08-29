@@ -42,7 +42,7 @@ class App extends Component{
           }/>
           <Route exact path='/signup' render={
             props => (<Signup {...props} loggedInStatus={this.state.isLoggedIn}
-            handleLogIn={this.state.handleLogIn} handleLogOut={this.handleLogOut}/>)
+            handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut}/>)
           }/>
           <Route exact path='/addpet' render={
             props => (<AddLostPet {...props} loggedInStatus={this.state.isLoggedIn} 
