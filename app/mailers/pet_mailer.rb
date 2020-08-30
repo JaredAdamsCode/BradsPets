@@ -1,6 +1,7 @@
 class PetMailer < ApplicationMailer
   default from: 'bradspets@gmail.com'
-  
+  layout 'mailer'
+
   def welcome_email(user)
     @user = user
     @specialtext = 'Hello #{user.username}, Welcome to BradsPets!'
