@@ -1,6 +1,6 @@
 class PetMailer < ApplicationMailer
   default from: 'bradspets@gmail.com'
-  layout 'mailer'
+  # layout 'mailer'
 
   def welcome_email(user)
     @user = user
