@@ -11,4 +11,6 @@ class PetMailer < ApplicationMailer::Base
     @user = User.find_by(id: message.send_to_user_id)
     @special_text = message.message_text
     mail(to: '#{user.email}', subject: 'You Found My Pet!')
+  end
+  
 end
