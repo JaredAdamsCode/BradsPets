@@ -1,5 +1,5 @@
 class PetMailer < ApplicationMailer::Base
-  default from: bradspets@gmail.com
+  default from: 'bradspets@gmail.com'
   
   def welcome_email(user)
     @user = user
