@@ -38,6 +38,8 @@ class Login extends Component{
       }
       else{
         this.setState({errors: response.data.errors});
+        alert("Login failed. Please check your username and password and try again");
+
       }
     }).catch(error => console.log("error from login: ", error));
   }

@@ -43,6 +43,7 @@ class Signup extends Component{
       }
       else{
         this.setState({errors: response.data.errors});
+        alert("Signup Unsuccessful. Please try again with a different username/email/password");
       }
     }).catch(error => console.log("error from signup: ", error));
 
