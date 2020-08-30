@@ -36,8 +36,9 @@ class Signup extends Component{
     axios.post("/users", {user}, {withCredentials: true})
     .then(response => {
       console.log("new user response: ", response);
-      if(response.data.data.success){
-        this.props.handleLogIn(response.data.data.user);
+      if(response.data.success){
+        console.log("new user obj: ", response.data.user);
+        this.props.handleLogIn(response);
         this.redirect();
       }
       else{
