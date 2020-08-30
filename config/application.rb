@@ -36,7 +36,7 @@ module PetReuniter
       :port => 587,
       :domain => "gmail.com",
       :user_name => "bradspets@gmail.com",
-      :password => "BradsPets123!",
+      :password => "sbpiutfuikgcztdb",
       :authentication => "plain",
       :enable_starttls_auto => true
     }
