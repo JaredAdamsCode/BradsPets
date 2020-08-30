@@ -54,7 +54,7 @@ class AccountMenu extends Component {
         onClose={this.handleClose}
         >
           <MenuItem component={ Link } to="/mypets">My Pets</MenuItem>
-          <MenuItem onClick={this.handleClose}>My account</MenuItem>
+          {/* <MenuItem onClick={this.handleClose}>My account</MenuItem> */}
           <MenuItem onClick={this.logout}>Logout</MenuItem>
         </Menu>
 

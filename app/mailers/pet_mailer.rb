@@ -4,8 +4,8 @@ class PetMailer < ApplicationMailer
 
   def welcome_email(user)
     @user = user
-    @specialtext = 'Hello' + user.username + ',\n' + 'Welcome to BradsPets!'
-    mail(to: @user.email, subject: 'Welcome to BradsPets', body: @specialtext)
+    @specialtext = 'Hello ' + user.username + ', ' + <br /> + 'Welcome to BradsPets!'
+    mail(to: @user.email, subject: "Welcome to Brad's Pets", body: @specialtext)
   end
 
   def message_user(message)
