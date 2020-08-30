@@ -1,6 +1,6 @@
 class PetMailer < ApplicationMailer
   default from: 'bradspets@gmail.com'
-  # layout 'mailer'
+  layout 'mailer'
 
   def welcome_email(user)
     @user = user
@@ -14,5 +14,4 @@ class PetMailer < ApplicationMailer
     @specialtext = @message.message_text
     mail(to: @user.email, subject: 'You Found My Pet!')
   end
-
 end
