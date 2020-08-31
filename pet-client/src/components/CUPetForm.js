@@ -32,7 +32,7 @@ class CUPetForm extends Component {
       </Grid>
       <Grid justify='center'
         container 
-        spacing={0}
+        spacing={4}
         >
           <Grid item >
           <Typography component="h1" variant="h5" align="left">
@@ -43,7 +43,7 @@ class CUPetForm extends Component {
 
       <Grid justify='center'
         container 
-        spacing={0}
+        spacing={4}
         >
           <Grid item >
             <form onSubmit={this.props.handleSubmit}>
@@ -54,7 +54,7 @@ class CUPetForm extends Component {
 
       <Grid justify='center'
         container 
-        spacing={0}
+        spacing={4}
         >
           <Grid item >
             <form onSubmit={this.props.handleSubmit}>
@@ -65,7 +65,7 @@ class CUPetForm extends Component {
 
       <Grid justify='center'
         container 
-        spacing={0}
+        spacing={4}
         >
           <Grid item >
             <form onSubmit={this.props.handleSubmit}>
@@ -75,7 +75,7 @@ class CUPetForm extends Component {
       </Grid>
       <Grid justify='center'
         container 
-        spacing={0}
+        spacing={4}
         >
           <Grid item >
             <form onSubmit={this.props.handleSubmit}>
